@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head start -->
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title of the Assignment -->
+  <title>Student Registration System</title>
+  <!-- Icon for website -->
+  <link rel="icon" type="image" sizes="32x32" href="./Images/favicon.png">
+  <!-- Linking CSS File -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<!-- head end -->
+
+<!-- body start -->
+<body>
+  <!-- header start -->
+  <header>
+    <h1>Student Registration System</h1>
+    <p>The <strong>Student Registration System</strong> is a comprehensive web-based application designed to facilitate the management of student information within educational institutions. This system allows administrators to register new students by capturing essential details such as name, class, address, and contact number. Additionally, it provides functionalities for editing and deleting student records, ensuring that the database remains up-to-date and accurate.</p>
+  </header>
+  <!-- header end -->
+   <!-- Main start -->
+  <main>
+    <!-- Form Section -->
+    <section class="form-section">
+      <!-- Form Details -->
+      <form id="studentForm">
+        <input type="number" id="studentRoll" placeholder="Student Roll No" required>
+        <input type="text" id="name" placeholder="Student Name" required>
+        <input type="number" id="studentId" placeholder="Student ID" title="Please enter a valid student id" required>
+        <input type="email" id="email" placeholder="Email ID" required>
+        <input type="tel" id="contact" placeholder="Contact No" pattern="\d{10}" title="Please enter a 10-digit mobile number" required>
+        <input type="text" id="city" placeholder="City" required>
+        <button type="submit">Add Student</button>
+      </form>
+    </section>
+
+    <!-- Display Section -->
+    <section class="display-section">
+      <h2>Registered Students</h2>
+      <div class="table-container">
+        <!-- Storing the student data -->
+        <table id="studentTable">
+          <thead>
+            <tr>
+              <th>Roll No</th>
+              <th>Name</th>
+              <th>ID</th>
+              <th>Email</th>
+              <th>Contact</th>
+              <th>City</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+   <!-- main end -->
+ <!-- footer start -->
+  <footer>
+    <!-- copyright information -->
+      <p>&copy; 2025 Student Registration System Website. All Rights Reserved.</p>
+  </footer>
+   <!-- JavaScript file linked -->
+  <script src="app.js"></script>
+</body>
+</html>
