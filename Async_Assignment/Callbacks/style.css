@@ -1,0 +1,22 @@
+/* Body  */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f35353;
+}
+/* h1 tag */
+h1 {
+  color: #333;
+  text-align: center;
+}
+/* button  */
+btn {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+/* div tag */
+div {
+  padding: 10px;
+  background: white;
+  border: 1px solid #ccc;
+}
